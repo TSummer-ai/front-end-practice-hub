@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Test</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <h2>二级标题</h2>
+    <p>这是一个段落。</p>
+    <p>
+      <b>这是一个粗体文本。</b><i>这是一个斜体文本。</i
+      ><u>这是一个下划线文本。</u><s>这是一个删除线文本。</s>
+    </p>
+    <ul>
+      <li>这是一个无序列表项。</li>
+      <li>这是另一个无序列表项。</li>
+    </ul>
+    <hr />
+    <ol>
+      <li>这是一个有序列表项。</li>
+      <li>这是另一个有序列表项。</li>
+    </ol>
+    <hr />
+    <table border="1">
+      // 添加边框属性
+      <tr>
+        <th>表头1</th>
+        <th>表头2</th>
+      </tr>
+      <tr>
+        <td>单元格数据1</td>
+        <td>单元格数据2</td>
+      </tr>
+    </table>
+    <hr />
+    <a href="https://github.com/" target="_blank">GitHub</a> // 添加 target
+    属性,决定其链接的打开方式
+    <br />
+    <img src="photo1.jpg" alt="图片未加载成功" width="300" />
+    <hr />
+    <div>这是一个div元素。为块级元素，作用是包含其他元素一并管理</div>
+    <span
+      >这是一个span元素。为行内元素，作用是包含其他元素一并管理里面可以套用
+      <a href="https://www.bilibili.com" target="_blank">哔哩哔哩</a></span
+    >
+    <hr />
+    <form action="">
+      <label for="name">姓名:</label>
+      <input type="text" id="name" name="name" placeholder="例如：王五" />
+      <br />
+      <span> 邮箱: </span>
+      <input type="email" id="email" name="email" value="344321@qq.com" />
+      <br />
+      <label for="password">密码:</label>
+      <input type="password" id="password" name="password" />
+      <br />
+      <label for="sex">性别:</label>
+      <input type="radio" id="male" name="sex" value="male" />
+      <label for="male">男</label>
+      <input type="radio" id="female" name="sex" value="female" />
+      <label for="female">女</label>
+      <br />
+      <label for="hobby">爱好:</label>
+      <input type="checkbox" id="sing" name="hobby" value="sing" />
+      <label for="sing">唱歌</label>
+      <input type="checkbox" id="dance" name="hobby" value="dance" />
+      <label for="dance">跳舞</label>
+      <input type="checkbox" id="rap" name="hobby" value="rap" />
+      <label for="rap">RAP</label>
+      <input type="checkbox" id="basket" name="hobby" value="basket" />
+      <label for="basket">篮球</label>
+      <br />
+      <input type="submit" value="提交" />
+    </form>
+    //表单form action属性指定表单提交的URL地址
+  </body>
+</html>
