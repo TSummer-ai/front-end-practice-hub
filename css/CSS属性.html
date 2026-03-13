@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .block {
+        width: 200px;
+        height: 100px;
+        background-color: lightblue;
+      }
+      .inline {
+        color: red;
+        font-size: 18px;
+        width: 200px;
+        height: 100px;
+        /* width和height对行内元素无效，只由他们本身决定 */
+      }
+      .inline-block {
+        width: 200px;
+        /* 行内块元素，既具有行内元素的特性，又具有块级元素的特性 */
+      }
+      .div-inline {
+        display: inline;
+        background-color: lightgreen;
+        /* display属性用于改变元素的显示类型，常见的值有block（块级元素）、inline（行内元素）、inline-block（行内块元素）等 */
+      }
+      .span-inline-block {
+        display: inline-block;
+        width: 150px;
+        height: 80px;
+        background-color: lightcoral;
+      }
+    </style>
+  </head>
+  <body>
+    <h1
+      style="
+        font-family: &quot;KaiTi&quot;;
+        font-size: 20px;
+        font-weight: bolder;
+      "
+    >
+      font属性实例
+    </h1>
+    <h1 style="font: bolder 20px &quot;KaiTi&quot;">font复合属性实例</h1>
+    <div class="block">块级元素</div>
+    <span class="inline">行内元素</span>
+    <img src="../photo1.jpg" alt="" class="inline-block" />
+    <h2>display用于标签见的转换</h2>
+    <div class="div-inline">转化为行内元素的div标签</div>
+    <span class="span-inline-block">转化为行内块元素的span标签</span>
+  </body>
+</html>
