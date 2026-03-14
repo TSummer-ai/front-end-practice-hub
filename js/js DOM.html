@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="box1">这是一个ID选择器标签</div>
+    <div class="box2">这是一个class选择器标签</div>
+    <div>这是普通的div标签</div>
+    <button>点击按钮</button>
+    <script>
+      var element_id = document.getElementById("box1");
+      console.log(element_id);
+      var element_class = document.getElementsByClassName("box2")[0]; // getElementsByClassName返回的是一个数组，需要通过索引访问具体的元素
+      console.log(element_class);
+      var element_tag = document.getElementsByTagName("div")[2];
+      console.log(element_tag);
+      element_id.innerHTML = '<a href="#">跳转链接</a>';
+      element_class.innerText = "Class选择器标签文本已修改";
+      // innerHTML会将字符串解析为HTML标签，而textContent会将字符串作为纯文本处理
+      element_tag.style.color = "red"; // 修改标签的样式，将文本颜色改为红色
+      element_tag.style.fontSize = "20px"; // 修改标签的样式，将字体大小改为20px
+      //DOM 属性绑定事件
+      var button_element = document.getElementsByTagName("button")[0];
+      console.log(button_element);
+      //   button_element.onclick = function () { //匿名函数仅在内部使用
+      //     alert("DOM属性 按钮被点击了！");
+      //   };
+
+      button_element.addEventListener("click", function () {
+        alert("addEventListener 按钮被点击了！");
+      });
+
+      button_element.addEventListener("click", click_event);
+      function click_event() {
+        alert("addEventListener 按钮被点击了！");
+      }
+    </script>
+  </body>
+</html>
